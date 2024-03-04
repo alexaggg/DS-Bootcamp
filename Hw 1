@@ -1,2 +1,28 @@
-print("hello world")
+VOWELS = "AEIOUaeiou"
+
+def count_vowels(word):
+    vowels = 0
+    for idx in range(len(word)):
+        if word[idx] in VOWELS: 
+            vowels += 1
+    
+    return(vowels)
+
+def sum_of_integers(numA, numB):
+    return (numA + numB)
+
+def main():
+    vowelTest = "there should be 9 VOWELS IN this"
+    print(count_vowels(vowelTest))
+
+    animals = ["tiger",'elephant','monkey','zebra','panther']
+    for idx in range(len(animals)):
+        print(animals[idx].upper())
+    
+    for idx in range(1,21,1):
+        print(idx)
+    
+    num1 = 10
+    num2 = 15
+    print(sum_of_integers(num1,num2))
 
